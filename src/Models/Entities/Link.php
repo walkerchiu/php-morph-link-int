@@ -31,7 +31,9 @@ class Link extends Entity
             'category',
             'serial',
             'target', 'url',
-            'order'
+            'order',
+            'count_access',
+            'count_download',
         ]);
 
         parent::__construct($attributes);

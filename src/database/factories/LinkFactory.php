@@ -8,9 +8,11 @@ use WalkerChiu\MorphLink\Models\Entities\LinkLang;
 
 $factory->define(Link::class, function (Faker $faker) {
     return [
-        'type'   => $faker->randomElement(['link', 'blog', 'facebook', 'instagram', 'twitter']),
-        'serial' => $faker->isbn10,
-        'url'    => $faker->url
+        'type'           => $faker->randomElement(['link', 'blog', 'facebook', 'instagram', 'twitter']),
+        'serial'         => $faker->isbn10,
+        'url'            => $faker->url,
+        'count_access'   => $faker->randomNumber(3, false),
+        'count_download' => $faker->randomNumber(2, false)
     ];
 });
 

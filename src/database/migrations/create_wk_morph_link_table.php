@@ -18,6 +18,8 @@ class CreateWkMorphLinkTable extends Migration
             $table->string('url');
             $table->unsignedBigInteger('order')->nullable();
             $table->boolean('is_enabled')->default(0);
+            $table->unsignedBigInteger('count_access')->nullable();
+            $table->unsignedBigInteger('count_download')->nullable();
 
             $table->timestampsTz();
             $table->softDeletes();
