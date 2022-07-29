@@ -11,6 +11,7 @@ $factory->define(Link::class, function (Faker $faker) {
         'type'           => $faker->randomElement(['link', 'blog', 'facebook', 'instagram', 'twitter']),
         'serial'         => $faker->isbn10,
         'url'            => $faker->url,
+        'extension'      => $faker->randomElement(['doc', 'docx', 'pdf', 'ppt', 'pptx', 'xls', 'xlsx', 'zip']),
         'count_access'   => $faker->randomNumber(3, false),
         'count_download' => $faker->randomNumber(2, false)
     ];

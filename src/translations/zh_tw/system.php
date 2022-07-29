@@ -16,6 +16,7 @@ return [
     'serial'         => '編號',
     'target'         => '開啟方法',
     'url'            => '網址',
+    'extension'      => '檔案類型',
     'order'          => '排序',
     'is_enabled'     => '是否啟用',
     'count_access'   => '瀏覽次數',

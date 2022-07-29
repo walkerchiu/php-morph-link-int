@@ -42,6 +42,7 @@ class LinkFormRequest extends FormRequest
             'serial'      => trans('php-morph-link::system.serial'),
             'target'      => trans('php-morph-link::system.target'),
             'url'         => trans('php-morph-link::system.url'),
+            'extension'   => trans('php-morph-link::system.extension'),
             'order'       => trans('php-morph-link::system.order'),
             'is_enabled'  => trans('php-morph-link::system.is_enabled'),
 
@@ -65,6 +66,7 @@ class LinkFormRequest extends FormRequest
             'serial'      => '',
             'target'      => 'required|string|max:10',
             'url'         => 'required|active_url',
+            'extension'   => '',
             'order'       => 'nullable|numeric|min:0',
             'is_enabled'  => 'required|boolean',
 

@@ -16,6 +16,7 @@ class CreateWkMorphLinkTable extends Migration
             $table->string('serial')->nullable();
             $table->string('target', 10)->default('_blank');
             $table->string('url');
+            $table->string('extension')->nullable();
             $table->unsignedBigInteger('order')->nullable();
             $table->boolean('is_enabled')->default(0);
             $table->unsignedBigInteger('count_access')->nullable();

@@ -16,6 +16,7 @@ return [
     'serial'         => 'Serial',
     'target'         => 'Open Method',
     'url'            => 'URL',
+    'extension'      => 'Extension',
     'order'          => 'Order',
     'is_enabled'     => 'Is Enabled',
     'count_access'   => 'Clicks',

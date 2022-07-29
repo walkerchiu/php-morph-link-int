@@ -31,6 +31,7 @@ class Link extends Entity
             'category',
             'serial',
             'target', 'url',
+            'extension',
             'order',
             'count_access',
             'count_download',

@@ -76,6 +76,9 @@ class LinkRepository extends Repository
                                             ->unless(empty($data['url']), function ($query) use ($data) {
                                                 return $query->where('url', 'LIKE', $data['url']."%");
                                             })
+                                            ->unless(empty($data['extension']), function ($query) use ($data) {
+                                                return $query->where('extension', 'LIKE', $data['extension']."%");
+                                            })
                                             ->unless(empty($data['name']), function ($query) use ($data) {
                                                 return $query->whereHas('langs', function ($query) use ($data) {
                                                     $query->ofCurrent()
